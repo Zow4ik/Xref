@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="styles/style.css">
+   <meta name="description" content="Simplify your talent journey and make confident, people-focused decisions with Xref.">
    <title>Xref</title>
 </head>
 <body>
@@ -28,8 +29,10 @@
                </li>
             </ul>
          </nav>
-         <button onclick="overlayMenu.showModal()" class="header__burger-menu visibility-mobile"></button>
-         <button onclick="overlayProfile.showModal()" class="header__entrance-profile">Sign in</button>
+         <button type="button" onclick="overlayMenu.showModal()" class="header__burger-menu visibility-mobile">
+            <span class="visually-hidden">open navigation menu</span>
+         </button>   
+         <button type="button" onclick="overlayProfile.showModal()" class="header__entrance-profile">Sign in</button>
          <a href="#" target="_blank" class="header__link link-light-green link-light-green--dark">Request a demo</a>
       </div>
    </header>
@@ -463,11 +466,11 @@
             <a href="#" target="_blank" class="overlay-menu__link">Pricing</a>
          </li>
       </ul>
-      <button onclick="overlayMenu.close()" class="overlay-menu__close"></button>
+      <button type="button" onclick="overlayMenu.close()" class="overlay-menu__close"></button>
    </dialog>
    <dialog id="overlayProfile" class="overlay-entrance-profile">
       <p>в разработке :></p>
-      <button onclick="overlayProfile.close()" class="overlay-entrance-profile__close">закрыть</button>
+      <button type="button" onclick="overlayProfile.close()" class="overlay-entrance-profile__close">закрыть</button>
    </dialog>
 </body>
 </html>

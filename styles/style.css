@@ -226,8 +226,6 @@ body {
    min-height: 80vh;
    justify-content: center;
 }
-.overlay-menu__item {
-}
 .overlay-menu__link {
    font-size: 40px;
    padding: 20px;
